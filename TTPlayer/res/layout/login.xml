@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_list_background" >
+
+    <include
+        android:id="@+id/l_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/l_ra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp" >
+
+        <TextView
+            android:id="@+id/txt_lo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="登陆后可收藏歌曲"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_lo"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            android:hint="请输入邮箱" />
+
+        <EditText
+            android:id="@+id/ed_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_name"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="#FFFFFF"
+            android:hint="请输入密码" />
+
+        <Button
+            android:id="@+id/but_zhuce"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ed_name"
+            android:layout_below="@+id/ed_pwd"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:background="#FFFFFF"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/but_login"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ed_name"
+            android:layout_below="@+id/ed_pwd"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:background="#55FF00"
+            android:text="登陆" />
+
+        <TextView
+            android:id="@+id/txt_fogt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ed_name"
+            android:layout_below="@+id/but_login"
+            android:layout_marginTop="10dp"
+            android:text="忘记密码？"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/l_ra"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/txt_keyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用以下账号登陆"
+            android:layout_margin="10dp"
+            android:textColor="#33CCFF"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/but_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_keyong"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_keyong"
+            android:background="@drawable/qq_icon" />
+
+        <ImageButton
+            android:id="@+id/but_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_keyong"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/but_qq"
+            android:background="@drawable/sina_icon" />
+
+        <TextView
+            android:id="@+id/txt_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ登陆"
+            android:layout_below="@+id/but_qq"
+            android:layout_alignLeft="@+id/but_qq" />
+        <TextView
+            android:id="@+id/txt_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微博登陆"
+            android:layout_below="@+id/but_qq"
+            android:layout_alignLeft="@+id/but_sina" />
+    </RelativeLayout>
+
+</RelativeLayout>

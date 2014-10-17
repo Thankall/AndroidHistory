@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_box"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff2977bd"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgBack_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:src="@drawable/back_normal" />
+
+            <TextView
+                android:id="@+id/texGameName_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="nnnnn"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <ImageView
+                android:id="@+id/imgShare_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5.0dip"
+                android:src="@drawable/share_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17.0dip"
+                android:background="#ffffffff"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgGameIcon_detail"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/pic_c" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/gamename_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="aaaaaa"
+                        android:textColor="#ff494a4a"
+                        android:textSize="15.0sp" />
+
+                    <RatingBar
+                        android:id="@+id/ratingbar_detail"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5" />
+
+                    <TextView
+                        android:id="@+id/gamedaxiao_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2.0dip"
+                        android:text="大小:"
+                        android:textColor="#ff494a4a"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/gameversion_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2.0dip"
+                        android:text="版本:"
+                        android:textColor="#ff494a4a"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/gamefenlei_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10.0dip"
+                        android:text="分类:"
+                        android:textColor="#ff494a4a"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/gamecount_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="下载次数:"
+                        android:textColor="#ff494a4a"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/gameupdate_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="更新日期:"
+                        android:textColor="#ff494a4a"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#ffe0e1e1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/detailIntr_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35.0dip"
+                    android:background="@drawable/button_detail_relagame"
+                    android:text="详情介绍"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/relatGame_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:background="@drawable/button_details_detail"
+                    android:text="相关游戏"
+                    android:textColor="#ff000000"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffffff" >
+
+                <RelativeLayout
+                    android:id="@+id/rel_detailIntr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_box"
+                    android:visibility="visible" >
+
+                    <GridView
+                        android:id="@+id/grid_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:horizontalSpacing="10.0dip"
+                        android:numColumns="3" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/grid_detail"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/webview_details"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:maxLines="2"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:background="@drawable/box_bg" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/moreinfo_details"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/ll_down"
+                        android:src="@drawable/more_arrow_normal" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_down"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/button_bg" >
+
+                        <Button
+                            android:id="@+id/download_detail"
+                            android:layout_width="200.0dip"
+                            android:layout_height="38.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="65.0dip"
+                            android:background="@drawable/button_download2_normal"
+                            android:text="下载"
+                            android:textColor="#ff55472e"
+                            android:textSize="20.0sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+<!--  <com.handmark.pulltorefresh.library.PullToRefreshListView
+             		xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/relatGame_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#ffe3e6e7"
+                    android:dividerHeight="1.0dip"
+                    android:visibility="invisible" 
+                    ptr:ptrMode="both"/>
+                     -->
+                
+                <ListView
+                    android:id="@+id/relatGame_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#ffe3e6e7"
+                    android:dividerHeight="1.0dip"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

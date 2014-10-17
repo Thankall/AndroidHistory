@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+       android:id="@+id/rl" 
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/tit_bg" >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back_normal" 
+            
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp" 
+        android:layout_below="@+id/rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/big"
+        />
+   <EditText  
+       android:id="@+id/iv"
+      
+       android:layout_width="wrap_content"
+       android:layout_height="170dp"
+       android:layout_alignLeft="@+id/tv"
+       android:layout_alignRight="@+id/tv"
+       android:layout_alignTop="@+id/tv"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:background="@null"
+       android:hint="         欢迎您提出宝贵的意见，您的每一个字都将会用来改善我们的软件"
+       android:gravity="center|top|left"
+       android:textSize="11sp"
+       />
+   
+   <TextView 
+       android:id="@+id/et"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text="联系方式 :"
+       android:layout_below="@+id/iv"
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="8dp"
+       android:textSize="14sp"/>
+   <EditText 
+       android:id="@+id/et1"
+          android:layout_height="27dp"
+       android:layout_width="wrap_content"
+       android:background="@drawable/big"
+        
+       android:layout_marginTop="8dp"
+       android:layout_below="@+id/et"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"/>
+ 
+<FrameLayout 
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/et1"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="8dp"
+    
+    >
+    <ImageView 
+        android:id="@+id/sendup"
+        android:layout_width="wrap_content"   
+        android:layout_height="25dp" 
+        android:src="@drawable/push" 
+        android:layout_gravity="center|top"
+        
+      android:layout_marginTop="10dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提  交"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center|top"
+        android:textSize="13dip" />
+
+</FrameLayout>
+   
+  
+       
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">耳机超人</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+<string name="t_single">1.单按键耳机：</string>
+    <string name="t_single_s">短按：报告当前时刻。</string>
+    <string name="t_single_l">长按：报告新收到信息发件人及内容。</string>
+    <string name="t_muil">2.多按键耳机：</string>
+    <string name="t_muil_play">播放/接听键：报告当前时刻。</string>
+    <string name="t_muil_pr">上一曲：报告新收到信息内容。</string>
+    <string name="t_muil_next">下一曲：报告新收到信息发件人。</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/ivicon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/portrait" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivicon"
+            android:layout_toRightOf="@+id/ivicon"
+            android:gravity="left"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:text="名字"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivicon"
+            android:layout_toRightOf="@+id/ivicon"
+            android:paddingTop="6dp"
+            android:text="1分钟前"
+            android:textColor="#FCA715"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvsource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvtime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvtime"
+            android:lines="1"
+            android:paddingTop="6dp"
+            android:text="来自：新浪微博"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ivicon"
+            android:layout_below="@+id/ivicon"
+            android:autoLink="web"
+            android:text="微博内容"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <ImageView
+                android:id="@+id/ivimg"
+                android:layout_below="@+id/tvtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/re_rl"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivimg"
+            android:layout_margin="5dp"
+            android:background="@drawable/timeline_retweet_background" >
+
+            <TextView
+                android:id="@+id/re_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="re" />
+
+            <ImageView
+                android:id="@+id/re_img"
+                android:layout_below="@+id/re_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:layout_margin="5dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rl" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/redcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_background_sel"
+                android:drawableLeft="@drawable/statusdetail_icon_retweet"
+                android:drawablePadding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/drawableleft"
+                android:paddingRight="@dimen/drawableleft"
+                android:paddingTop="5dp"
+                android:text="转发"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#aaaaaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/commentcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_background_sel"
+                android:drawableLeft="@drawable/statusdetail_icon_comment"
+                android:drawablePadding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/drawableleft"
+                android:paddingRight="@dimen/drawableleft"
+                android:paddingTop="5dp"
+                android:text="评论"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#aaaaaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/likecount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_background_sel"
+                android:drawableLeft="@drawable/statusdetail_icon_like"
+                android:drawablePadding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/drawableleft"
+                android:paddingRight="@dimen/drawableleft"
+                android:paddingTop="5dp"
+                android:text="赞"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

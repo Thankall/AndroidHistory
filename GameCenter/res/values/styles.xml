@@ -1,0 +1,99 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	 <style name="StyleBarTitle">
+        <item name="android:textColor">@color/set_text_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ProgressBarStyle">
+        <item name="android:textColor">@color/text_tab_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="DialogTopMessage">
+        <item name="android:textColor">@color/text_tab_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="widget_listview">
+        <item name="android:background">@drawable/list_selecter_bg</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:listSelector">@drawable/listview_item_selector</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:divider">@drawable/list_line</item>
+        <item name="android:dividerHeight">1.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="list_item_app_name">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+    
+   
+    
+    <style name="activity_title_style">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="viewpager_title_style">
+        <item name="android:textSize">@dimen/viewpager_title_text_size</item>
+    </style>
+    <style name="activity_back_style">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="header_title_style">
+        <item name="android:textSize">@dimen/header_title_size</item>
+    </style>
+    <style name="grouptitlebar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="menutitletext">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+    <style name="pushsettingbar">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="menulisttext">
+        <item name="android:textSize">@dimen/left_menu_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>

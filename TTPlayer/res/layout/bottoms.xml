@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/img_fang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:alpha="100"
+        android:focusable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/social_first_publish_bkg" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_fang"
+        android:layout_marginLeft="10dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_art"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="unknow"/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="unknow"/>
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="unknow"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_centerInParent="true"
+        
+        android:id="@+id/img_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        
+        android:background="@drawable/appwidget_icon_play_normal"/>
+
+    <ImageButton
+        
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_play"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/img_next"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/appwidget_icon_play_next_normal"/>
+
+    <ImageButton
+        
+        android:id="@+id/img_menu"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        
+        android:background="@drawable/icon_list_item_sort"/>
+
+</RelativeLayout>

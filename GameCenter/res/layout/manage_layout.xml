@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/layoutManagerHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtDownlaodManger"
+            style="@style/viewpager_title_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button2_click"
+            android:gravity="center"
+            android:text="下载管理" />
+
+        <TextView
+            android:id="@+id/txtSoftManger"
+            style="@style/viewpager_title_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="@dimen/login_txt_downlaod_manger_layout_marginLeft"
+            android:layout_marginRight="@dimen/login_txt_downlaod_manger_layout_marginRight"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button2_normal"
+            android:gravity="center"
+            android:text="软件管理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/layoutManagerHeader"
+        android:background="#ffbcc0c4"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/lin1"
+        android:background="#fffafafa"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/relDownload"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lin2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/downloading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lit_tit_bg"
+            android:gravity="center_vertical"
+            android:text="下载中"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="17.0sp" />
+
+        <ListView
+            android:id="@+id/listviewDownload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/downloading"
+            android:background="@drawable/list_selecter_bg"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:divider="@drawable/list_line"
+            android:dividerHeight="1.0dip"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@drawable/listview_item_selector" />
+
+        <TextView
+            android:id="@+id/downloaded"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listviewDownload"
+            android:background="@drawable/lit_tit_bg"
+            android:gravity="center_vertical"
+            android:text="下载完成"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="17.0sp" />
+
+        <ListView
+            android:id="@+id/listviewDownloaded"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/downloaded"
+            android:background="@drawable/list_selecter_bg"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:divider="@drawable/list_line"
+            android:dividerHeight="1.0dip"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@drawable/listview_item_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relManagerSoft"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lin2"
+        android:background="@color/app_background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lit_tit_bg"
+            android:gravity="center_vertical"
+            android:text="可更新"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="17.0sp" />
+
+        <ListView
+            android:id="@+id/listviewupdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/update"
+            android:background="@drawable/list_selecter_bg"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:divider="@drawable/list_line"
+            android:dividerHeight="1.0dip"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@drawable/listview_item_selector" />
+
+        <TextView
+            android:id="@+id/local"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listviewupdate"
+            android:background="@drawable/lit_tit_bg"
+            android:gravity="center_vertical"
+            android:text="本地"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="17.0sp" />
+
+        <ListView
+            android:id="@+id/listviewlocal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local"
+            android:background="@drawable/list_selecter_bg"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:divider="@drawable/list_line"
+            android:dividerHeight="1.0dip"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@drawable/listview_item_selector" />
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>

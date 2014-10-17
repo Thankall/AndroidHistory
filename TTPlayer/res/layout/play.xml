@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <include
+        android:id="@+id/l_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/title2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号：111111111" />
+
+        <TextView
+            android:id="@+id/txt_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码：222223131" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/but_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/appwidget_icon_minilyric_off" />
+
+        <ImageButton
+            android:id="@+id/but_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/but_pause"
+            android:background="@drawable/prev_selecter" />
+
+        <ImageButton
+            android:id="@+id/but_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            
+           
+            android:background="@drawable/appwidget_icon_play_normal" />
+
+        <ImageButton
+            android:id="@+id/but_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/but_pause"
+            android:background="@drawable/next_selecter" />
+
+        <ImageButton
+            android:id="@+id/but_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/icon_favourite_checked" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/but_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/l_title"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_share" />
+    <SeekBar
+        android:id="@+id/prb_song"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        
+       
+        
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/list_selected" />
+
+    <TextView
+        android:id="@+id/txt_etime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/prb_song"
+        android:layout_alignTop="@+id/prb_song"
+        android:layout_marginTop="15dp"
+        android:textColor="#121212"
+        android:text="03:50" />
+
+    <TextView
+        android:id="@+id/txt_stime"
+        android:textColor="#212121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_etime"
+        android:layout_alignBottom="@+id/txt_etime"
+        android:layout_alignLeft="@+id/prb_song"
+        android:text="00:00" />
+
+</RelativeLayout>
